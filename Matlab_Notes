@@ -1,0 +1,119 @@
+
+1. Octave Command line:
+	ls
+	pwd
+	cd
+	edit
+
+2. Conditions:
+	if     - USES BOTH CONDITIONS EVEN IF THE FIRST ONE IS SATISFIED
+	if
+
+	if     - IF A CONDITION IS SATISFIED IT STOPS
+	else if
+
+3. Loops:
+	for loop:
+		iterable value
+		start and end point
+		
+	while loop:
+		doesnt need an end point can be ended when you want.
+		any for loop can be converted to a while
+		but not all while loops can be converted to a for loop
+
+			for i = 1:10;
+				print(i);
+			
+			i = 1
+			while i >= 1 and i <= 10;
+				print(i):
+				i = i + 1;
+	
+
+4.How to sum a series
+	- Declare variable to sum
+	- look for iterable value or values and make them i
+	- Look for start point and end point of iterable value
+	- look for how much it iterates by
+	- if more than 1 iterable value use i for first value and for second value manipulate it so it works etc
+	- Add using sum
+
+
+
+	sum_series = 0
+	
+	for i = start:iteration:end: --- 1:2:101
+		sum_series = sum_series + 1/i
+
+	Dry run:
+		0 = 0 + 1/1
+		1 = 1 + 1/3
+		4/3 = 4/3 + 1/5
+		etc...
+		
+
+
+5. Functions
+	-Function name and file name must be the same!!!
+	-Different Variables in equation = Parameters
+	-use feval to combine functions in the function
+	
+
+
+
+
+
+
+	Series
+Q1 - 1
+sum_series = 0;
+
+for i = 1:2:1001
+  sum_series = sum_series + (1/i)
+endfor
+
+
+Q1 - 2
+sum_ser = 0;
+for i = 1:2:99
+  sum_ser = sum_ser + (1/((i)^2)*((i+2)^2))
+end
+
+Q2
+y(1) = 0.5; 
+y(2) = 0.6; 
+for m=2:11; 
+  y(m+1)=(y(m-1))^2+(y(m))^2; 
+end
+disp(y)
+
+Q3
+
+	Quadratic
+function x = quadratic(a,b,c)
+ quad=sqrt(b^2-4*a*c);
+ x(1)=(-b+quad)/(2*a);
+ x(2)=(-b-quad)/(2*a);
+endfunction
+
+Q4
+
+	Second_derivative
+function x = second_derivative(f,x,h)
+  fh=feval(f,h)
+  fx=feval(f,x)
+  x = (f(x+h)-2*f(x)+f(x-h))/h^2
+endfunction
+	
+
+
+
+	
+
+
+	
+	
+	
+	
+

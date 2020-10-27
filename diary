@@ -1,0 +1,232 @@
+octave-3.2.4.exe:13> ls
+ Volume in drive C is Acer
+ Volume Serial Number is 42F8-6D68
+
+ Directory of C:\Users\Raees\Dropbox\UNISA\Octave
+
+[.]       [..]      1         diary     Test1.m   
+               3 File(s)             83 bytes
+               2 Dir(s)  271,416,348,672 bytes free
+octave-3.2.4.exe:14> diary off
+octave-3.2.4.exe:7> rand("state",503190510917)
+octave-3.2.4.exe:8> rand(1)
+ans =  0.073432
+octave-3.2.4.exe:9> exit
+
+octave-3.2.4.exe:4> format long
+octave-3.2.4.exe:5> sqrt(2)
+ans =  1.41421356237310
+octave-3.2.4.exe:6> exit
+
+octave-3.2.4.exe:5> edit
+octave-3.2.4.exe:6> ls
+ Volume in drive C is Acer
+ Volume Serial Number is 42F8-6D68
+
+ Directory of C:\Users\Raees\Dropbox\UNISA\Octave
+
+[.]                   Act219.m              q6.m
+[..]                  Act227.m              quadratic.m
+1                     diary                 secd.m
+a215.m                Ex2.m                 second_derivative.m
+Act214.m              fac.m                 Test1.m
+Act215.m              new1.m                Test227.m
+Act216.m              q4.m                  
+              18 File(s)          2,371 bytes
+               2 Dir(s)  270,941,786,112 bytes free
+octave-3.2.4.exe:7> edit
+octave-3.2.4.exe:8> new 2
+error: `new' undefined near line 8 column 1
+octave-3.2.4.exe:8> new2
+error: `new2' undefined near line 8 column 1
+octave-3.2.4.exe:8> ls
+ Volume in drive C is Acer
+ Volume Serial Number is 42F8-6D68
+
+ Directory of C:\Users\Raees\Dropbox\UNISA\Octave
+
+[.]                   Act227.m              q6.m
+[..]                  diary                 quadratic.m
+1                     Ex2.m                 secd.m
+a215.m                fac.m                 second_derivative.m
+Act214.m              new  2                Test1.m
+Act215.m              new1.m                Test227.m
+Act216.m              new2                  
+Act219.m              q4.m                  
+              20 File(s)          3,096 bytes
+               2 Dir(s)  270,944,333,824 bytes free
+octave-3.2.4.exe:9> A = [2 3;4 5]
+A =
+
+   2   3
+   4   5
+
+octave-3.2.4.exe:10> B = [10;8]
+B =
+
+   10
+    8
+
+octave-3.2.4.exe:11> x =A\b
+error: `b' undefined near line 11 column 6
+octave-3.2.4.exe:11> clear
+octave-3.2.4.exe:12> A = [2 3;4 5]
+A =
+
+   2   3
+   4   5
+
+octave-3.2.4.exe:13> b = [10;8]
+b =
+
+   10
+    8
+
+octave-3.2.4.exe:14> x =A\b
+x =
+
+  -13
+   12
+
+octave-3.2.4.exe:15> new2
+error: `new2' undefined near line 15 column 1
+octave-3.2.4.exe:15> edit
+octave-3.2.4.exe:16> new2
+A =
+
+   2   3
+   4   5
+
+b =
+
+   10
+    8
+
+error: operator /: nonconformant arguments (op1 is 2x2, op2 is 2x1)
+error: called from:
+error:   C:\Users\Raees\Dropbox\UNISA\Octave\new2.m at line 3, column 2
+octave-3.2.4.exe:16> edit
+octave-3.2.4.exe:17> new2
+A =
+
+   2   3
+   4   5
+
+b =
+
+   10
+    8
+
+x =
+
+  -13
+   12
+
+octave-3.2.4.exe:18> edit
+octave-3.2.4.exe:19> exit
+
+octave-3.2.4.exe:7> second_derivative
+error: `f' undefined near line 2 column 12
+error: evaluating argument list element number 1
+error: evaluating argument list element number 1
+error: called from:
+error:   C:\Users\Raees\Dropbox\UNISA\Octave\second_derivative.m at line 2, column 5
+octave-3.2.4.exe:7> function x = second_derivative(f,x,h)
+>   fh=feval(f,h)
+>   fx=feval(f,x)
+>   x = (f(x+h)-2*f(x)+f(x-h))/h^2
+> endfunction
+octave-3.2.4.exe:8> second_derivative(@sin,pi/4,10^-1)
+fh =  0.099833
+fx =  0.70711
+x = -0.70652
+ans = -0.70652
+>> ex6
+I =
+
+ Columns 1 through 5:
+
+   2.28056733283023   2.27990800425037   2.27924793156371   2.27858711737016   2.27792556426818
+
+ Columns 6 through 10:
+
+   2.27726327485483   2.27660025172567   2.27593649747480   2.27527201469482   2.27460680597681
+
+ Columns 11 through 15:
+
+   2.27394087391029   2.27327422108325   2.27260685008208   2.27193876349158   2.27126996389493
+
+ Columns 16 through 20:
+
+   2.27060045387366   2.26993023600766   2.26925931287513   2.26858768705259   2.26791536111483
+
+ Columns 21 through 25:
+
+   2.26724233763490   2.26656861918413   2.26589420833205   2.26521910764640   2.26454331969312
+
+ Columns 26 through 30:
+
+   2.26386684703633   2.26318969223828   2.26251185785939   2.26183334645816   2.26115416059122
+
+ Columns 31 through 35:
+
+   2.26047430281326   2.25979377567705   2.25911258173340   2.25843072353114   2.25774820361711
+
+ Columns 36 through 40:
+
+   2.25706502453615   2.25638118883107   2.25569669904265   2.25501155770958   2.25432576736851
+
+ Columns 41 through 45:
+
+   2.25363933055395   2.25295224979835   2.25226452763198   2.25157616658300   2.25088716917739
+
+ Columns 46 through 50:
+
+   2.25019753793896   2.24950727538931   2.24881638404784   2.24812486643172   2.24743272505586
+
+ Columns 51 through 55:
+
+   2.24673996243291   2.24604658107326   2.24535258348499   2.24465797217387   2.24396274964334
+
+ Columns 56 through 60:
+
+   2.24326691839451   2.24257048092611   2.24187343973452   2.24117579731371   2.24047755615525
+
+ Columns 61 through 65:
+
+   2.23977871874829   2.23907928757954   2.23837926513327   2.23767865389127   2.23697745633285
+
+ Columns 66 through 70:
+
+   2.23627567493482   2.23557331217149   2.23487037051462   2.23416685243344   2.23346276039464
+
+ Columns 71 through 75:
+
+   2.23275809686232   2.23205286429798   2.23134706516055   2.23064070190633   2.22993377698898
+
+ Columns 76 through 80:
+
+   2.22922629285954   2.22851825196638   2.22780965675519   2.22710050966899   2.22639081314809
+
+ Columns 81 through 85:
+
+   2.22568056963010   2.22496978154988   2.22425845133957   2.22354658142856   2.22283417424344
+
+ Columns 86 through 90:
+
+   2.22212123220806   2.22140775774345   2.22069375326785   2.21997922119665   2.21926416394244
+
+ Columns 91 through 95:
+
+   2.21854858391495   2.21783248352105   2.21711586516474   2.21639873124713   2.21568108416645
+
+ Columns 96 through 100:
+
+   2.21496292631800   2.21424426009417   2.21352508788441   2.21280541207523   2.21208523505017
+
+ Column 101:
+
+   2.21136455918982
+
+Ave =  2.24647687535441
+>> 
